@@ -9,7 +9,7 @@ By default, A Flask server will listen to port 5000. The endpoint is `/`.
 First install the dependencies from the requirements.txt file using `pip install -r requirements.txt`.\nMake sure to install the required dependencies from the `requirements.txt` file using `pip install -r requirements.txt` before running the Flask example.
 
 ```shell script
-Run the Flask server by executing the command `python app.py --model-path DTAI-KULeuven/robbertje-shuffled-dutch-die-vs-dat --fast-model-path pdelobelle/robbert-v2-dutch-base` in the terminal.
+Make a POST request to `/fast` with the same parameter `sentence` filled in using the command `curl --data "sentence=Daar loopt _die_ meisje." localhost:5000/fast`.
 ```
 
 ## Classification model
