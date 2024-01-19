@@ -6,17 +6,17 @@ It will return whether a sentence contains the correct—according to RobBERT—
 By default, A Flask server will listen to port 5000. The endpoint is `/`.
 
 ## Get started
-First install the dependencies from the requirements.txt file using `pip install -r requirements.txt`
+First install the dependencies from the YOUR_REQUIREMENTS_TXT_FILE file using `pip install -r requirements.txt`
 
 ```shell script
-$ python app.py --model-path DTAI-KULeuven/robbertje-shuffled-dutch-die-vs-dat --fast-model-path pdelobelle/robbert-v2-dutch-base
+$ python app.py --model-path YOUR_MODEL_PATH --fast-model-path YOUR_FAST_MODEL_PATH
 ```
 
 ## Classification model
-Simply make a http POST request to `/` with the parameter `sentence` filled in:
+Simply make a http POST request to `/` with the parameter `text` filled in:
 
 ```shell script
-$ curl --data "sentence=Daar loopt _die_ meisje." localhost:5000
+$ curl --data "sentence=Enter your sentence here" localhost:5000
 ```
 
 This should give you the following response:
