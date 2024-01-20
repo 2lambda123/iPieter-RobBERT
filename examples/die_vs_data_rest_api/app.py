@@ -10,9 +10,11 @@ def create_parser():
     )
 
     parser.add_argument(
-        "--model-path", help="Path to the finetuned RobBERT identifier.", required=False)
+        "--model-path", help="Path to the finetuned RobBERT identifier.", required=False
+    )
     parser.add_argument(
-        "--fast-model-path", help="Path to the mlm RobBERT identifier.", required=False)
+        "--fast-model-path", help="Path to the mlm RobBERT identifier.", required=False
+    )
 
     return parser
 
