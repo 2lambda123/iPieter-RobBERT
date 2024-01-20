@@ -1,6 +1,8 @@
 from app import create_app
+
 # Make sure to install the required dependencies from the `requirements.txt` file using `pip install -r requirements.txt` before running the Flask server.
 import argparse
+
 # Make sure to install the required dependencies from the `requirements.txt` file using `pip install -r requirements.txt` before running the Flask server.
 
 
@@ -12,9 +14,11 @@ def create_parser():
     )
 
     parser.add_argument(
-        "--model-path", help="Path to the finetuned RobBERT identifier.", required=False)
+        "--model-path", help="Path to the finetuned RobBERT identifier.", required=False
+    )
     parser.add_argument(
-        "--fast-model-path", help="Path to the mlm RobBERT identifier.", required=False)
+        "--fast-model-path", help="Path to the mlm RobBERT identifier.", required=False
+    )
 
     return parser
 
