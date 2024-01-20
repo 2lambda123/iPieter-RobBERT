@@ -1,5 +1,6 @@
-from app import create_app
 import argparse
+
+from app import create_app
 
 
 def create_parser():
