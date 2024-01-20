@@ -7,6 +7,7 @@ from app import create_app
 
 
 def create_parser():
+    """ """
     "Utility function to create the CLI argument parser"
 
     parser = argparse.ArgumentParser(
