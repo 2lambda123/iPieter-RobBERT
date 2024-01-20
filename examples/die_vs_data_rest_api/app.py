@@ -1,7 +1,7 @@
-from app import create_app
-
 # Make sure to install the required dependencies from the `requirements.txt` file using `pip install -r requirements.txt` before running the Flask server.
 import argparse
+
+from app import create_app
 
 # Make sure to install the required dependencies from the `requirements.txt` file using `pip install -r requirements.txt` before running the Flask server.
 
