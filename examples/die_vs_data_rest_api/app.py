@@ -11,15 +11,15 @@ def create_parser():
     "Utility function to create the CLI argument parser"
 
     parser = argparse.ArgumentParser(
-        description="Create a REST endpoint for for 'die' vs 'dat' disambiguation."
-    )
+        description=
+        "Create a REST endpoint for for 'die' vs 'dat' disambiguation.")
 
-    parser.add_argument(
-        "--model-path", help="Path to the finetuned RobBERT identifier.", required=False
-    )
-    parser.add_argument(
-        "--fast-model-path", help="Path to the mlm RobBERT identifier.", required=False
-    )
+    parser.add_argument("--model-path",
+                        help="Path to the finetuned RobBERT identifier.",
+                        required=False)
+    parser.add_argument("--fast-model-path",
+                        help="Path to the mlm RobBERT identifier.",
+                        required=False)
 
     return parser
 
