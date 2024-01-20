@@ -18,4 +18,4 @@ if __name__ == "__main__":
     args = arg_parser.parse_args()
 
     create_parser()
-    create_app(args.model_path, args.fast_model_path).run()
+    create_app(None, None).run()
