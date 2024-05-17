@@ -232,6 +232,6 @@ def create_app(model_path: str, fast_model_path: str, device="cpu"):
                 # This would be a good place for logging/storing queries + results
                 print(response)
 
-                return json.dumps(response)
+                return (json.dumps(response), {'Content-Type': 'application/json'})
 
     return app
